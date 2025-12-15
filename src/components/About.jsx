@@ -2,11 +2,11 @@ import React from 'react'
 
 const About = () => {
   return (
-   <section id='about' className='about section' data-aos="fades-up">
+   <section id='about' className='about section' data-aos="fades-right">
     <div className='about-container'>
         <h2>About Our Pharmacy</h2>
         <p> 
-            ABC Pharmacy is a licensed local pharmacy committed to providing
+            Shiv Medicos is a licensed local pharmacy committed to providing
           genuine medicines and reliable healthcare products to our community.
         </p>
 
