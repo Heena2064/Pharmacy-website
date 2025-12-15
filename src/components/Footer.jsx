@@ -9,7 +9,7 @@ const Footer = () => {
 
 
         <div className='footer-brand' data-aos='fade-up'>
-            <h3>ABC Pharmacy</h3>
+            <h3>Shiv Medicos</h3>
             <p>Your trusted neighborhood pharmacy</p>
             </div>  
 
@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
 
         <div className='footer-bottom' data-aos='fade-up'>
-            <p>© {new Date().getFullYear()} ABC Pharmacy. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Shiv Medicos . All rights reserved.</p>
 
         </div>
     </footer>
