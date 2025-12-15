@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Logo from '../assets/Logo.png'
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false)
   return (
      <header className="navbar" > 
 
@@ -11,17 +12,29 @@ const Navbar = () => {
 
      </div>
      
+     <button
+      className={`menu-toggle ${open ? 'open' : ''}`}
+      aria-label="Toggle navigation"
+      aria-expanded={open}
+      onClick={() => setOpen(prev => !prev)}
+     >
+       <span />
+       <span />
+       <span />
+     </button>
+     
         
        
      
 
         {/*navigation links*/}
-    <nav className="nav-links" data-aos="fade-down">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#categories">Categories</a>
-        <a href="#prescription">Prescription</a>
-        <a href="#contact">Contact</a>
+    <nav className={`nav-links ${open ? 'open' : ''}`} data-aos="fade-down">
+      <a href="#home" onClick={() => setOpen(false)}>Home</a>
+      <a href="#about" onClick={() => setOpen(false)}>About</a>
+      <a href="#categories" onClick={() => setOpen(false)}>Categories</a>
+      <a href="#prescription" onClick={() => setOpen(false)}>Prescription</a>
+      <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
+      <a href="tel:+916284641102" className="call-btn-mobile" onClick={() => setOpen(false)}>Call Now</a>
     </nav>
 
     <a href="tel:+916284641102" className="call-btn" data-aos="fade-down">

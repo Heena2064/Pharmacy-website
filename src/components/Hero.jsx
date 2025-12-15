@@ -11,7 +11,7 @@ const Hero = () => {
 
             <div className='hero-buttons'>
                 <a 
-                href="https://wa.me/919876543210?text=Hello%20I%20want%20to%20upload%20a%20prescription" 
+                href="https://wa.me/916284641102?text=Hello%20I%20want%20to%20upload%20a%20prescription" 
                 target='_blank'
                 rel='noopener noreferrer'
                 className='btn primary'
